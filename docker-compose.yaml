@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+  api-gateway:
+    image: api-gateway
+    build:
+      context: .
+      dockerfile: src/ApiGateway/Dockerfile
+    ports:
+      - "8090:80"
+    networks:
+      - apinet
+
+  basket-api:
+    image: basket-api
+    build:
+      context: .
+      dockerfile: src/BasketApi/Dockerfile
+    ports:
+      - "8081:80"
+    networks:
+      - apinet
+
+  catalog-api:
+    image: catalog-api
+    build:
+      context: .
+      dockerfile: src/CatalogApi/Dockerfile
+    ports:
+      - "8082:80"
+    networks:
+      - apinet
+
+networks:
+  apinet:
+    driver: bridge
+
+
