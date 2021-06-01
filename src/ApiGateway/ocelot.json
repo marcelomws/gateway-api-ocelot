@@ -18,7 +18,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "	api-catalog",
+          "Host": "api-catalog",
           "Port": 8082
         }
       ],
