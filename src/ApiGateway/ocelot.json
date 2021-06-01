@@ -19,7 +19,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "api-catalog",
-          "Port": 8082
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/product/{everything}",
