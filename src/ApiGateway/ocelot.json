@@ -18,8 +18,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "catalog",
-          "Port": 80
+          "Host": "	35.170.58.205",
+          "Port": 32768
         }
       ],
       "UpstreamPathTemplate": "/product/{everything}",
